@@ -33,6 +33,10 @@ public class AutoController {
     public List<Auto> findAutoByModel(@RequestParam(name="model") String model) {
         return autoService.findAutoByModel(model);
     }
+    @GetMapping("/search")
+    public List<Auto> searchAutoByModelFragment(@RequestParam(name="fragment") String fragment) {
+        return autoService.searchAutoByModelFragment(fragment);
+    }
 
     @PostMapping
     public void addAuto(@RequestBody Auto auto) {

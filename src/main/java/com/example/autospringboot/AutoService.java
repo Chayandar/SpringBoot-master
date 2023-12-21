@@ -37,4 +37,8 @@ public class AutoService {
     public List<Auto> findAutoByModel(String model) {
         return autoRepository.findByModelIgnoreCase(model);
     }
+    public List<Auto> searchAutoByModelFragment(String fragment) {
+        return autoRepository.findByModelContainingIgnoreCase(fragment);
+    }
+
 }

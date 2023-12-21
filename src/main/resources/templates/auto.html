@@ -7,16 +7,10 @@
 <body>
 <h2>Auto List</h2>
 <ul>
-    <li th:each="auto : ${auto}">
+    <li th:each="auto : ${autos}">
         <span th:text="${auto.marka} ?: 'N/A'"></span>
-    </li>
-    <li th:each="auto : ${auto}">
         <span th:text="${auto.model} ?: 'N/A'"></span>
-    </li>
-    <li th:each="auto : ${auto}">
         <span th:text="${auto.nalichie} ?: 'N/A'"></span>
-    </li>
-    <li th:each="auto : ${auto}">
         <span th:text="${auto.sena} ?: 'N/A'"></span>
     </li>
 </ul>
